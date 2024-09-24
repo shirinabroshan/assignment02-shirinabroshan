@@ -1,0 +1,77 @@
+###
+GET http://localhost:9090/api/v1/orders
+Content-Type: application/json
+ 
+###
+GET http://localhost:9090/api/v1/customers
+Content-Type: application/json
+###
+GET http://localhost:9090/api/v1/cars
+Content-Type: application/json
+
+###
+POST http://localhost:9090/api/v1/addcustomer
+Content-Type: application/json
+
+{
+        "username": "Hedda093",
+        "name": "shhrodii033",
+        "address": "stokholm 34322",
+        "email": "hanneswww@example.com",
+        "phoneNumber": "07667777791"
+    }
+###
+POST http://localhost:9090/api/v1/addcar
+Content-Type: application/json
+
+  {
+        "pricePerDay": 87,
+        "fabric": "huanda",
+        "model": "C37",
+        "registrationNumber": "XCV0",
+        "isBooked": false
+    }
+
+###
+PUT http://localhost:9090/api/v1/updatecustomer
+Content-Type: application/json
+
+    {
+        "id": 1,
+        "username": "elmira1",
+        "name": "Ellela1",
+        "address": "centrum908776",
+        "email": "elsisvenson@example.com",
+        "phoneNumber": "09876601"
+     }
+###
+PUT http://localhost:9090/api/v1/updatecar
+Content-Type: application/json
+
+ {
+        "id": 1,
+        "pricePerDay": 660.0,
+        "fabric": "Mazda02",
+        "model": "Model2000",
+        "registrationNumber": "REG0888800",
+        "isBooked": true
+    }
+###
+DELETE http://localhost:9090/api/v1/deletecustomer
+Content-Type: application/json
+
+{"id":8
+}
+###
+DELETE http://localhost:9090/api/v1/deletecar
+Content-Type: application/json
+
+{"id":5
+}
+
+###
+DELETE http://localhost:9090/api/v1/deletecar
+Content-Type: application/json
+
+{"id":5
+}
