@@ -113,10 +113,7 @@ test.describe('Test suite car-rental', () => {
         "id": 7,
       }
     });
-    expect(carAlredydeletedResponse.ok()).toBeTruthy();
+    //expect(carAlredydeletedResponse.ok()).toBeTruthy();
     expect(carAlredydeletedResponse.status()).toBe(404);
   });
-
-
-
 });
