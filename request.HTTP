@@ -26,10 +26,10 @@ POST http://localhost:9090/api/v1/addcar
 Content-Type: application/json
 
   {
-        "pricePerDay": 2287,
-        "fabric": "Toshiba",
-        "model": "C3767",
-        "registrationNumber": "XCV089",
+        "pricePerDay": -10000000,
+        "fabric": "nissan",
+        "model": "B567897",
+        "registrationNumber": "bbhh089",
         "isBooked": false
     }
 
@@ -67,7 +67,7 @@ Content-Type: application/json
 DELETE http://localhost:9090/api/v1/deletecar
 Content-Type: application/json
 
-{"id":6
+{"id":14
 }
 
 ###

@@ -46,7 +46,7 @@ test.describe('Test suite car-rental', () => {
         "pricePerDay": "45550",
         "fabric": "Toshibanda",
         "model": "C527",
-        "registrationNumber": "rC328",
+        "registrationNumber": "roo28",
         "isBooked": false
       }
     });
@@ -108,12 +108,24 @@ test.describe('Test suite car-rental', () => {
 
   test('test 10 Car already deleted', async ({ request }) => {
     const carAlredydeletedResponse = await request.delete('http://localhost:9090/api/v1/deletecar', {
-
-      data: {
-        "id": 7,
-      }
+      data: { "id": 7, }
     });
     //expect(carAlredydeletedResponse.ok()).toBeTruthy();
     expect(carAlredydeletedResponse.status()).toBe(404);
   });
+
+  test('test 11 Delete car by id ', async ({ request }) => {
+    const getCarsResponse = await request.get(' http://localhost:9090/api/v1/cars');
+    expect(getCarsResponse.ok()).toBeTruthy();
+
+    const allCars = await getCarsResponse.json();
+    const lastButoneCarID = allCars[allCars.length - 2].id;
+    //delete request
+    const deletCarbyIDResponse = await request.delete(`http://localhost:9090/api/v1/deletecar'/${lastButoneCarID}`);
+    //expect(deletCarbyIDResponse.ok()).toBeTruthy();
+    const checkDeletCarResponse = await request.get(`http://localhost:9090/api/v1/deletecar'/${lastButoneCarID}`);
+    expect(checkDeletCarResponse.status()).toBe(404);
+
+  });
+
 });
