@@ -14,21 +14,22 @@ POST http://localhost:9090/api/v1/addcustomer
 Content-Type: application/json
 
 {
-        "username": "Hedda093",
-        "name": "shhrodii033",
-        "address": "stokholm 34322",
-        "email": "hanneswww@example.com",
-        "phoneNumber": "07667777791"
+        "username": "Jakayla.Daniel",
+        "name": "Ira O'Hara",
+        "address": "272 Wolf Key",
+        "email": "Amari17@yahoo.com",
+        "phoneNumber": "442.430.4119 x391"
     }
+  
 ###
 POST http://localhost:9090/api/v1/addcar
 Content-Type: application/json
 
   {
-        "pricePerDay": 87,
-        "fabric": "huanda",
-        "model": "C37",
-        "registrationNumber": "XCV0",
+        "pricePerDay": 2287,
+        "fabric": "Toshiba",
+        "model": "C3767",
+        "registrationNumber": "XCV089",
         "isBooked": false
     }
 
@@ -38,11 +39,11 @@ Content-Type: application/json
 
     {
         "id": 1,
-        "username": "elmira1",
+        "username": "robin",
         "name": "Ellela1",
         "address": "centrum908776",
         "email": "elsisvenson@example.com",
-        "phoneNumber": "09876601"
+        "phoneNumber": "098601"
      }
 ###
 PUT http://localhost:9090/api/v1/updatecar
@@ -51,9 +52,9 @@ Content-Type: application/json
  {
         "id": 1,
         "pricePerDay": 660.0,
-        "fabric": "Mazda02",
-        "model": "Model2000",
-        "registrationNumber": "REG0888800",
+        "fabric": "Mazda08",
+        "model": "Model20160",
+        "registrationNumber": "REG08800",
         "isBooked": true
     }
 ###
@@ -66,7 +67,7 @@ Content-Type: application/json
 DELETE http://localhost:9090/api/v1/deletecar
 Content-Type: application/json
 
-{"id":5
+{"id":6
 }
 
 ###
