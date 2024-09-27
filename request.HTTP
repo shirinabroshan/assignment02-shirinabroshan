@@ -14,7 +14,7 @@ POST http://localhost:9090/api/v1/addcustomer
 Content-Type: application/json
 
 {
-        "username": "Jak.Daniel",
+        "username": "Jamaika.Daniel",
         "name": "IraHara",
         "address": "27233 W Key",
         "email": "Amarireza17@yahoo.com",
@@ -74,5 +74,5 @@ Content-Type: application/json
 DELETE http://localhost:9090/api/v1/deletecar
 Content-Type: application/json
 
-{"id":5
+{"id":14
 }
