@@ -99,7 +99,7 @@ test.describe('Test suite car-rental', () => {
     const deleteCarResponse = await request.delete('http://localhost:9090/api/v1/deletecar', {
 
       data: {
-        "id": 7,
+        "id": 3,
       }
     });
     expect(deleteCarResponse.ok()).toBeTruthy();
@@ -108,7 +108,7 @@ test.describe('Test suite car-rental', () => {
 
   test('test 10 Car already deleted', async ({ request }) => {
     const carAlredydeletedResponse = await request.delete('http://localhost:9090/api/v1/deletecar', {
-      data: { "id": 7, }
+      data: { "id": 3, }
     });
     //expect(carAlredydeletedResponse.ok()).toBeTruthy();
     expect(carAlredydeletedResponse.status()).toBe(404);
