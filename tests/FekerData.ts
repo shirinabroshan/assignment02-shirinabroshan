@@ -25,11 +25,11 @@ export const createnewcar = () => {
 export const updateCustomerData = () => {
     return {
         "id": 1,
-        username: "karin",
-        name: "olofson",
-        address: "centrum 20",
-        email: "silvian@example.com",
-        phoneNumber: "090000001"
+        username: faker.internet.userName(),
+        name: faker.person.fullName(),
+        address: faker.location.streetAddress(),
+        email: faker.internet.email(),
+        phoneNumber: faker.phone.number()
     };
 }
 
@@ -46,12 +46,12 @@ export const updatecarF = () => {
 
 //Delete
 export const deletecarid = () => {
-    return { "id": 2, };
+    return { "id": 3, };
 }
 
 
 export const deletecustomeridF = () => {
-    return { "id": 2, };
+    return { "id": 3, };
 }
 
 
